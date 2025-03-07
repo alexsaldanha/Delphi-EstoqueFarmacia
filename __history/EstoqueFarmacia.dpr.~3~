@@ -1,0 +1,16 @@
+program EstoqueFarmacia;
+
+uses
+  Vcl.Forms,
+  unitPrincipal in 'unitPrincipal.pas' {formPrincipal},
+  unitCadProduto in 'unitCadProduto.pas' {formCadProdutos};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TformPrincipal, formPrincipal);
+  Application.CreateForm(TformCadProdutos, formCadProdutos);
+  Application.Run;
+end.
