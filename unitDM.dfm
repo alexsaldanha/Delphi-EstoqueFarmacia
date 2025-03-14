@@ -19,6 +19,33 @@ object DM: TDM
     TableName = 'estoque_farmacia.produtos'
     Left = 200
     Top = 64
+    object tbProdutosid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+      ReadOnly = False
+    end
+    object tbProdutosnome: TStringField
+      FieldName = 'nome'
+      Origin = 'nome'
+      Required = True
+      Size = 50
+    end
+    object tbProdutosfabricante: TStringField
+      FieldName = 'fabricante'
+      Origin = 'fabricante'
+      Required = True
+      Size = 30
+    end
+    object tbProdutosvalidade: TDateField
+      FieldName = 'validade'
+      Origin = 'validade'
+      Required = True
+      EditMask = '##/##/####;1;_'
+    end
+    object tbProdutosestoqueAtual: TIntegerField
+      FieldName = 'estoqueAtual'
+      Origin = 'estoqueAtual'
+    end
   end
   object dsProdutos: TDataSource
     DataSet = tbProdutos
