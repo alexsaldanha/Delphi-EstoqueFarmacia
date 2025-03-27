@@ -33,6 +33,13 @@ type
     tbMovProdutosidProduto: TIntegerField;
     tbMovProdutosqtd: TIntegerField;
     tbMovProdutosnomeProduto: TStringField;
+    dsSqlMovProdutos: TDataSource;
+    sqlMovProdutos: TFDQuery;
+    sqlMovProdutosid: TFDAutoIncField;
+    sqlMovProdutosidMovimentacao: TIntegerField;
+    sqlMovProdutosidProduto: TIntegerField;
+    sqlMovProdutosqtd: TIntegerField;
+    sqlMovProdutosnomeProduto: TStringField;
     procedure tbMovProdutosAfterPost(DataSet: TDataSet);
     procedure tbMovProdutosAfterDelete(DataSet: TDataSet);
     procedure calcularTotais;
